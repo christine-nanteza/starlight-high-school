@@ -15,3 +15,6 @@ A PHP-based school management website with admin dashboard and MySQL database.
 - MySQL / phpMyAdmin
 - HTML & CSS
 - JavaScript
+
+## Live Website
+https://christine-starlight.kesug.com/home.html
