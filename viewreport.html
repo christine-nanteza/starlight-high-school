@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Student Report | Starlight High School</title>
+<style>
+            /* =====================
+   RESET & BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* =====================
+   SECTIONS (CARDS)
+===================== */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f4b400;
+    border-radius: 3px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* =====================
+   TABLE (REPORT CARD)
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* =====================
+   SUMMARY HIGHLIGHT
+===================== */
+section:last-of-type p strong {
+    color: #1e3a5f;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* =====================
+   RESPONSIVE TABLE
+===================== */
+@media (max-width: 768px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table th {
+        display: none;
+    }
+
+    table td {
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        font-weight: bold;
+        color: #1e3a5f;
+    }
+
+    table td:nth-of-type(1)::before { content: "Subject"; }
+    table td:nth-of-type(2)::before { content: "Marks"; }
+    table td:nth-of-type(3)::before { content: "Grade"; }
+    table td:nth-of-type(4)::before { content: "Remarks"; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>View Student Report</h2>
+
+        <nav>
+            <a href="teacherDB.php">Dashboard</a> |
+            <a href="login.php">Logout</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select Student</h2>
+            
+            <form action="#" method="get">
+                <p>
+                    <label>Class:</label><br>
+                    <select name="class">
+                        <option value="">-- Select Class --</option>
+                        <option value="S1">Senior One (S1)</option>
+                        <option value="S2">Senior Two (S2)</option>
+                        <option value="S3">Senior Three (S3)</option>
+                    <option value="S4">Senior Four (S4)</option>
+                    <option value="S5">Senior Five (S5)</option>
+                    <option value="S6">Senior Six (S6)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Student:</label><br>
+                    <select name="student">
+                        <option value="">-- Select Student --</option>
+                        <option value="[Student 1]">[Student Name]</option>
+                        <option value="[Student 2]">[Student Name]</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Term / Year:</label><br>
+                    <select name="term">
+                        <option value="">-- Select Term --</option>
+                        <option value="Term 1">Term 1</option>
+                        <option value="Term 2">Term 2</option>
+                        <option value="Term 3">Term 3</option>
+                    </select>
+                </p>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Student Report Card</h2>
+                <p><strong>Student Name:</strong> [Student Name]</p>
+                <p><strong>Class:</strong> [Class]</p>
+                <p><strong>Term / Year:</strong> [Term / Year]</p>
+
+            <table border="2">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Remarks</th>
+                </tr>
+
+                <tr>
+                    <td>[Subject 1]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 2]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 3]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+            </table>
+
+            <p><strong>Total Marks:</strong> [Total Marks]</p>
+            <p><strong>Average:</strong> [Average]</p>
+            <p><strong>Overall Grade:</strong> [Overall Grade]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e171018113e0d0a1f0c121719160a16171916501f1d500b19">[email&#160;protected]</a><br>
+            Phone: +256 700 567

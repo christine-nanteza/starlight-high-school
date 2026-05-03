@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARLIGHT HIGH SCHOOL | APPLY FOR ADMISSION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <p>Online Admission Application</p>
+
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="admissions.html">Admissions</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Student Personal Information</h2>
+
+            <form action="#" method="post">
+                <label for="first_name">First Name:</label><br>
+                <input type="text" name="first_name" placeholder="Enter First Name" required><br><br>
+
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" name="last_name" placeholder="Enter Last Name" required><br><br>
+
+                <label for="DOB">Date of Birth:</label><br>
+                <input type="date" name="date_of_birth" required><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <select name="gender">
+                    <option value="">-- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+
+                <label for="nationality">Nationality:</label><br>
+                <input type="text" name="nationality" required><br><br>
+
+                <label for="class">Class Applying For:</label><br>
+                <select name="class_applied">
+                    <option value="">-- Select Class --</option>
+                    <option value="S1">Senior One (S1)</option>
+                    <option value="S2">Senior Two (S2)</option>
+                    <option value="S3">Senior Three (S3)</option>
+                    <option value="S4">Senior Four (S4)</option>
+                    <option value="S5">Senior Five (S5)</option>
+                    <option value="S6">Senior Six (S6)</option>
+                </select><br><br>
+
+                <label>Student Type:</label><br>
+                <select name="student_type">
+                    <option value="">-- Select Type --</option>
+                    <option value="Day">Day Student</option>
+                    <option value="Boarding">Boarding Student</option>
+                </select><br><br>
+
+                <h2>Previous School Information</h2>
+                <label for="name">Previous School Name:</label><br>
+                <input type="text" name="previous_school" required><br><br>
+
+                <label for="name">PLE Results (if applicable):</label><br>
+                <input type="text" name="ple_index" required><br><br>
+
+                <label for="name">Senior four Results (if applicable):</label><br>
+                <input type="text" name="seniorfour_index" required><br><br>
+
+                <h2>UACE Subject Combination (For Senior Five & Senior Six Applicants)</h2>
+                <label for="combination_name">Combination Type:</label><br>
+                <select name="combination_type">
+                    <option value="">-- Select Combination Type --</option>
+                    <option value="Sciences">Sciences</option>
+                    <option value="Arts">Arts</option>
+                </select><br><br>
+
+                <label for="principal_one">Principal Subject 1:</label><br>
+                <select name="principal_one">
+                    <option value="">-- Select Subject --</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Divinity">Divinity</option>
+                </select><br><br>
+
+                <label for="principal_two">Principal Subject 2:</label><br>
+                <select name="principal_two">
+                    <option value="">-- Select Subject --</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="History">History</option>
+                    <option value="Literature">Literature</option>
+                    <option value="Divinity">Divinity</option>
+                </select><br><br>
+
+                <label>Subsidiary Subject:</label><br>
+                <select name="subsidiary">
+                    <option value="">-- Select Subject --</option>
+                    <option value="General Paper">General Paper</option>
+                    <option value="ICT">ICT</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
+                    <option value="Sub Math">Sub Mathematics</option>
+                </select><br><br>
+
+                <label>Preferred Combination Name (if known):</label><br>
+                <input type="text" name="combination_name" placeholder="e.g. BCM, HEL PCM, HEG, MEG"><br><br>
+
+                <h2>Parent / Guardian Information</h2>
+                <label for="parent">Parent / Guardian Name:</label><br>
+                <input type="text" name="guardian_name" required><br><br>
+ 
+                <label for="relationship">Relationship to Student:</label><br>
+                <input type="text" name="relationship" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" name="guardian_phone" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" name="guardian_email" required><br><br>
+
+                <label for="address">Home Address:</label><br>
+                <textarea name="address" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARLIGHT HIGH SCHOOL | STUDENT REPORT</title>
+    <style>
+        /* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f6fc;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: linear-gradient(135deg, #1f3c88, #2563eb);
+    color: #ffffff;
+    padding: 22px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 6px;
+    color: #dbeafe;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    margin-top: 14px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN CONTENT AREA
+========================= */
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   CARD SECTIONS
+========================= */
+section {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+    position: relative;
+}
+
+/* Blue highlight line */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #2563eb;
+    border-radius: 10px 10px 0 0;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+section h2 {
+    color: #1f3c88;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+/* =========================
+   STUDENT INFO
+========================= */
+section p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+section p strong {
+    color: #2563eb;
+}
+
+/* =========================
+   REPORT TABLE
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    font-size: 14.5px;
+}
+
+table th {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+table td {
+    padding: 11px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f5ff;
+}
+
+table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* =========================
+   SUMMARY SECTION
+========================= */
+section:last-of-type p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #1f3c88;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer strong {
+    color: #dbeafe;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Report Card</h2>
+
+        <nav>
+            <a href="studentDB.php">Dashboard</a>
+            <a href="login.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Student: [Student Name]</h2>
+                <p><strong>Class:</strong>[Class]</p>
+                <p><strong>Academic Term:</strong>[Term / Year]</p>
+            <table border="2">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Remarks</th>
+                </tr>
+
+                <tr>
+                    <td>[Subject 1]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 2]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 3]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+                <tr>
+                    <td>[Subject 4]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 5]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+
+                <tr>
+                    <td>[Subject 6]</td>
+                    <td>[Marks]</td>
+                    <td>[Grade]</td>
+                    <td>[Remarks]</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+                <p><strong>Total Marks:</strong>[Total Marks]</p>
+                <p><strong>Average:</strong>[Average]</p>
+                <p><strong>Overall Grade:</strong>[Overall Grade]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c05020a032c1f180d1e00050b041804050b04420d0f42190b">[email&#160;protected]</a><br>
+            Phone: +256 700 5

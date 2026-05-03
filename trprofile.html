@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STARLIGHT HIGH SCHOOL | TEACHER PROFILE</title>
+    <style>
+        /* =====================
+   GLOBAL RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background-color: #1e3a5f; /* same as dashboard/about */
+    color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   MAIN LAYOUT
+===================== */
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* =====================
+   CARD SECTIONS
+===================== */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Section Titles */
+section h2 {
+    margin-bottom: 18px;
+    color: #1e3a5f;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Highlight line under title */
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f4b400; /* gold accent */
+    border-radius: 3px;
+}
+
+/* =====================
+   PERSONAL INFO STYLING
+===================== */
+section p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+section p strong {
+    color: #1e3a5f;
+    width: 120px;
+    display: inline-block;
+}
+
+/* =====================
+   PASSWORD FORM
+===================== */
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1e3a5f;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #1e3a5f;
+}
+
+/* Submit Button */
+button {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #16304d;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+     
+    line-height: 1.5;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Teacher Profile</h2>
+
+        <nav>
+            <a href="teacherDB.php">Dashboard</a> |
+            <a href="login.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> [Teacher Name]</p>
+            <p><strong>Staff ID:</strong> [Staff ID]</p>
+            <p><strong>Subject(s):</strong> [Subjects]</p>
+            <p><strong>Email:</strong> [Email]</p>
+            <p><strong>Phone:</strong> [Phone]</p>
+        </section>
+
+        <section>
+            <h2>Change Password</h2>
+            <form>
+            <label for="current">Current Password:</label>
+            <input type="password" name="current-password"><br><br>
+
+            <label for="new">New Password:</label>
+            <input type="password" name="new-password"><br><br>
+
+            <label for="confirm">Confirm New Password:</label>
+            <input type="password" name="confirm-new-password"><br><br>
+
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+      <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9d0d7dfd6f9cacdd8cbd5d0ded1cdd1d0ded197d8da97ccde">[email&#160;protected]</a><br>
+            Phone: +256 700 567

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STARLIGHT HIGH SCHOOL | FINANCIAL OVERVIEW</title>
+    <style>
+        /* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #f4d03f;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header hr {
+    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+main {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #0b3c5d;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   FINANCIAL SUMMARY TEXT
+========================= */
+section p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+section p strong {
+    color: #0b3c5d;
+}
+
+/* =========================
+   TABLE STYLING
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table tr:hover {
+    background-color: #eef3f7;
+}
+
+/* =========================
+   STATUS STYLES
+========================= */
+td:last-child {
+    font-weight: bold;
+}
+
+td:contains("Paid") {
+    color: green;
+}
+
+td:contains("Pending") {
+    color: #e67e22;
+}
+
+td:contains("Outstanding") {
+    color: #c0392b;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #f4d03f;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Financial Overview</h2>
+
+        <nav>
+            <a href="staffDB.php">Dashboard</a> |
+            <a href="login.php">Logout</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Financial Summary</h2>
+            <p><strong>Academic Term:</strong> [Term / Year]</p>
+            <p><strong>Total Students:</strong> [Total Students]</p>
+            <p><strong>Total Fees Expected:</strong> [Total Expected Amount]</p>
+            <p><strong>Total Fees Collected:</strong> [Total Collected Amount]</p>
+            <p><strong>Total Outstanding Balance:</strong> [Total Outstanding Amount]</p>
+        </section>
+
+        <section>
+            <h2>Student Fee Records</h2>
+            <table border="1">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Class</th>
+                    <th>Total Fee</th>
+                    <th>Paid</th>
+                    <th>Balance</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>[Student Name]</td>
+                    <td>[Class]</td>
+                    <td>[Total Fee]</td>
+                    <td>[Amount Paid]</td>
+                    <td>[Balance]</td>
+                    <td>[Status]</td>
+                </tr>
+                <tr>
+                    <td>[Student Name]</td>
+                    <td>[Class]</td>
+                    <td>[Total Fee]</td>
+                    <td>[Amount Paid]</td>
+                    <td>[Balance]</td>
+                    <td>[Status]</td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4920272f26093a3d283b25202e213d21202e2167282a673c2e">[email&#160;protected]</a><br>
+            Phone: +256 700 567

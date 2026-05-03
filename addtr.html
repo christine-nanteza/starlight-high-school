@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STARLIGHT HIGH SCHOOL | ADD TEACHER</title>
+    <style>
+        /* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #f4d03f;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header hr {
+    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+section {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0b3c5d;
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #0b3c5d;
+    box-shadow: 0 0 3px rgba(11, 60, 93, 0.4);
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+form button,
+form input[type="submit"] {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #072b42;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0b3c5d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer strong {
+    color: #f4d03f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Add New Teacher</h2>
+
+        <nav>
+            <a href="staffDB.php">Dashboard</a> |
+            <a href="login.php">Logout</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Teacher Information</h2>
+
+            <form action="#" method="post">
+                <label for="first_name">First Name:</label><br>
+                <input type="text" name="first_name" placeholder="Enter First Name"><br><br>
+
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" name="last_name" placeholder="Enter Last Name"><br><br>
+
+                <label for="staff_id">Staff ID:</label><br>
+                <input type="text" name="staff_id" placeholder="Enter Staff ID"><br><br>
+
+                <label for="subject">Subject(s) Taught:</label><br>
+                <input type="text" name="subjects"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" placeholder="Enter Email"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" name="phone" placeholder="+256 700 675 124"><br><br>
+
+                <label for="date">Date Employed:</label><br>
+                <input type="date" name="employment_date"><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <select name="gender">
+                    <option value="">-- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+
+                <button type="submit">Add Teacher</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d44434b426d5e594c5f41444a455945444a45034c4e03584a">[email&#160;protected]</a><br>
+            Phone: +256 700 567

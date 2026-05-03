@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Applications | Starlight High School</title>
+<style>
+    /* =====================
+   RESET & BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #eef1f5;
+    color: #333;
+}
+
+/* =====================
+   HEADER (ADMIN)
+===================== */
+header {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #ffffff;
+    padding: 25px 30px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.3);
+    margin-top: 15px;
+}
+
+/* =====================
+   MAIN LAYOUT
+===================== */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =====================
+   SECTION CARD
+===================== */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 4px;
+    background-color: #dc2626;
+    border-radius: 3px;
+}
+
+/* =====================
+   TABLE STYLING
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 12px 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+table tr:hover {
+    background-color: #eef2f7;
+}
+
+/* =====================
+   STATUS HIGHLIGHT
+===================== */
+td:nth-child(6) {
+    font-weight: bold;
+}
+
+td:nth-child(6):contains("Pending") {
+    color: #ca8a04;
+}
+
+td:nth-child(6):contains("Approved") {
+    color: #16a34a;
+}
+
+td:nth-child(6):contains("Rejected") {
+    color: #dc2626;
+}
+
+/* =====================
+   ACTION BUTTONS
+===================== */
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input[type="submit"] {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Approve */
+input[name="approve"] {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+input[name="approve"]:hover {
+    background-color: #15803d;
+}
+
+/* Reject */
+input[name="reject"] {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+input[name="reject"]:hover {
+    background-color: #b91c1c;
+}
+
+/* View Link */
+td a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   RESPONSIVE TABLE
+===================== */
+@media (max-width: 900px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Admission Applications</h2>
+
+        <nav>
+            <a href="staffDB.php">Dashboard</a> |
+            <a href="login.php">Logout</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Applications List</h2>
+            <table border="1">
+                <tr>
+                    <th>Applicant Name</th>
+                    <th>Class Applied</th>
+                    <th>Student Type</th>
+                    <th>Combination</th>
+                    <th>Guardian Contact</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>[Student Name]</td>
+                    <td>[S1 / S5 / S6]</td>
+                    <td>[Day / Boarding]</td>
+                    <td>[PCM / HEG / N/A]</td>
+                    <td>[Phone]</td>
+                    <td>[Pending]</td>
+
+                    <td>
+                        <form action="#" method="post">
+                            <input type="hidden" name="application_id" value="[ID]">
+                            <input type="submit" name="approve" value="Approve">
+                            <input type="submit" name="reject" value="Reject">
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>[Student Name]</td>
+                    <td>[Class]</td>
+                    <td>[Type]</td>
+                    <td>[Combination]</td>
+                    <td>[Contact]</td>
+                    <td>[Approved]</td>
+                    <td>
+                        <a href="viewapplications.html">View</a>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+</body>
+</html>

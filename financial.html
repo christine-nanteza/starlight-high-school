@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STARLIGHT HIGH SCHOOL | FINANCIAL STATEMENT</title>
+    <style>
+        /* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BASE STYLES
+========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F9FAFB;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #2563EB;
+    color: white;
+    padding: 30px 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+/* =========================
+   HEADER NAV
+========================= */
+header nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FCD34D;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: #FCD34D;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   CARD SECTIONS
+========================= */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+section h2 {
+    font-size: 22px;
+    color: #2563EB;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #FF6B6B;
+    display: block;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+/* =========================
+   FINANCIAL TABLE
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+table th {
+    background-color: #2563EB;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+}
+
+table tr:nth-child(even) td {
+    background-color: #F9FAFB;
+}
+
+table tr:hover td {
+    background-color: #EFF6FF;
+}
+
+/* =========================
+   FINANCIAL SUMMARY
+========================= */
+section p {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+section p strong {
+    color: #2563EB;
+}
+
+/* =========================
+   PAYMENT FORM
+========================= */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1F2937;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1E40AF;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    section {
+        padding: 22px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+}
+
+/* =========================
+   SMOOTH SCROLL
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Financial Statement</h2>
+
+        <nav>
+            <a href="studentDB.php">Dashboard</a> 
+            <a href="login.php">Logout</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fee Overview</h2>
+            <table border="1">
+                <tr>
+                    <th>Description</th>
+                    <th>Amount (UGX)</th>
+                    <th>Status</th>
+                    <th>Date Paid</th>
+                </tr>
+
+                <tr>
+                    <td>[Fee Description 1]</td>
+                    <td>[Amount 1]</td>
+                    <td>[Status 1]</td>
+                    <td>[Date Paid 1]</td>
+                </tr>
+            </table>
+
+            <p><strong>Total Paid:</strong> [Total Paid]</p>
+            <p><strong>Total Pending:</strong> [Total Pending]</p>
+        </section>
+
+        <section>
+            <h2>Pay School Fees</h2>
+            <p>Select a payment method and proceed to pay your pending fees.</p>
+
+            <form>
+                <label for="payment">Select Payment Method:</label>
+                <select name="payment_method">
+                    <option value="">-- Select Method --</option>
+                    <option value="mobile_money">Mobile Money</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                    <option value="card">Credit/Debit Card</option>
+                </select><br><br>
+
+                <label>Amount to Pay (UGX):</label>
+                <input type="number" name="amount" value="[Pending Amount]">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>   
+    </main>
+
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: info@starlighthigh.ac.ug<br>
+            Phone: +256 700 567 891<br>
+            &copy; 2026 Starlight High School. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

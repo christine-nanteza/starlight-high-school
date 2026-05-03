@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARLIGHT HIGH SCHOOL | ACADEMICS</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.subjects-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:16px}
+.subject-item{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 14px;font-size:14px;font-weight:500;color:var(--primary);display:flex;align-items:center;gap:8px}
+.subject-item::before{content:'📖';font-size:14px}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="home.html" class="navbar-brand"><img src="images/logo.png" alt="Starlight Logo"><div class="brand-text"><span class="brand-name">STARLIGHT HIGH SCHOOL</span><span class="brand-motto">Knowledge for Life and Service</span></div></a>
+    <ul class="navbar-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html" class="active">Academics</a></li>
+      <li><a href="admissions.html">Admissions</a><ul class="dropdown"><li><a href="admissions.html#requirements">Requirements</a></li><li><a href="apply.php">Apply Online</a></li><li><a href="admissions.html#fees">School Fees</a></li></ul></li>
+      <li><a href="news.html">News &amp; Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-login"><a href="login.php">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:50px 24px;text-align:center">
+  <div style="max-width:700px;margin:0 auto">
+    <span class="hero-badge">Academics</span>
+    <h1 style="font-family:'Poppins',sans-serif;font-size:36px;font-weight:700;color:var(--white);margin-top:14px">Our Academic Program</h1>
+    <p style="color:rgba(255,255,255,0.8);margin-top:12px">Following the UNEB curriculum for both O-Level and A-Level, designed to nurture intellectual growth and practical skills.</p>
+  </div>
+</div>
+
+<div class="page-wrapper-md">
+
+  <div class="card">
+    <h2 class="card-title">O-Level Subjects (S1 – S4)</h2>
+    <div style="height:14px"></div>
+    <p style="color:var(--text-muted);margin-bottom:4px">Students in Senior One to Senior Four study the following subjects under the UNEB O-Level curriculum:</p>
+    <div class="subjects-list">
+      <div class="subject-item">Mathematics</div>
+      <div class="subject-item">English Language</div>
+      <div class="subject-item">Biology</div>
+      <div class="subject-item">Chemistry</div>
+      <div class="subject-item">Physics</div>
+      <div class="subject-item">Geography</div>
+      <div class="subject-item">History</div>
+      <div class="subject-item">Christian Religious Education</div>
+      <div class="subject-item">Islamic Religious Education</div>
+      <div class="subject-item">Computer Studies</div>
+      <div class="subject-item">Fine Art</div>
+      <div class="subject-item">Literature in English</div>
+      <div class="subject-item">Kiswahili</div>
+      <div class="subject-item">Agriculture</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="card-title">A-Level Subjects (S5 – S6)</h2>
+    <div style="height:14px"></div>
+    <p style="color:var(--text-muted);margin-bottom:20px">Students choose a combination of Sciences or Arts subjects:</p>
+    <div class="form-grid-2">
+      <div>
+        <h3 style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:var(--primary);margin-bottom:12px">🔬 Science Subjects</h3>
+        <div class="subjects-list" style="grid-template-columns:1fr">
+          <div class="subject-item">Mathematics</div>
+          <div class="subject-item">Physics</div>
+          <div class="subject-item">Biology</div>
+          <div class="subject-item">Chemistry</div>
+          <div class="subject-item">Economics</div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:var(--primary);margin-bottom:12px">📚 Arts Subjects</h3>
+        <div class="subjects-list" style="grid-template-columns:1fr">
+          <div class="subject-item">History</div>
+          <div class="subject-item">Geography</div>
+          <div class="subject-item">Divinity</div>
+          <div class="subject-item">Economics</div>
+          <div class="subject-item">Literature in English</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="card-title">Academic Departments</h2>
+    <div style="height:14px"></div>
+    <div class="features-grid">
+      <div class="feature-card" style="padding:22px"><div class="feature-icon" style="font-size:20px;width:42px;height:42px">🔬</div><h3 style="font-size:15px">Science Department</h3><p style="font-size:13px">Physics, Chemistry, Biology — with a modern laboratory for practical work.</p></div>
+      <div class="feature-card gold-top" style="padding:22px"><div class="feature-icon" style="font-size:20px;width:42px;height:42px">📚</div><h3 style="font-size:15px">Arts Department</h3><p style="font-size:13px">History, Geography, Divinity, Literature and Economics.</p></div>
+      <div class="feature-card blue-top" style="padding:22px"><div class="feature-icon" style="font-size:20px;width:42px;height:42px">💻</div><h3 style="font-size:15px">Mathematics &amp; ICT</h3><p style="font-size:13px">Strong maths foundation from S1–S6 with a dedicated computer lab.</p></div>
+      <div class="feature-card green-top" style="padding:22px"><div class="feature-icon" style="font-size:20px;width:42px;height:42px">🌐</div><h3 style="font-size:15px">Languages Department</h3><p style="font-size:13px">English, Literature, Kiswahili and communication skills.</p></div>
+      <div class="feature-card" style="padding:22px;border-top-color:var(--warning)"><div class="feature-icon" style="font-size:20px;width:42px;height:42px">🎨</div><h3 style="font-size:15px">Technical &amp; Creative Arts</h3><p style="font-size:13px">Fine Art, Agriculture and vocational skills for creative learners.</p></div>
+    </div>
+  </div>
+
+  <div style="background:var(--primary);border-radius:var(--radius-lg);padding:36px;text-align:center;color:var(--white)">
+    <h2 style="font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;margin-bottom:10px">Ready to Join Starlight?</h2>
+    <p style="color:rgba(255,255,255,0.8);margin-bottom:24px">Apply for admission today and start your journey towards academic excellence.</p>
+    <a href="apply.php" class="btn btn-accent">Apply Now</a>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="brand-name">Starlight High School</div><p>A private mixed day and boarding secondary school offering quality education from Senior One to Senior Six under the UNEB curriculum.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="home.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="news.html">News &amp; Events</a></li></ul></div>
+    <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="#">Kyengera, Kampala, Uganda</a></li><li><a href="tel:+256700567891">+256 700 567 891</a></li><li><a href="mailto:info@starlighthigh.ac.ug">info@starlighthigh.ac.ug</a></li><li><a href="#">Mon–Fri: 8:00 AM – 5:00 PM</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Starlight High School. All rights reserved. | Private Mixed Secondary School | UNEB Curriculum</div>
+</footer>
+</body>
+</html>

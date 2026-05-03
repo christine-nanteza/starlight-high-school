@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARLIGHT HIGH SCHOOL | STUDENT PROFILE</title>
+    <style>
+                /* =========================
+        GLOBAL RESET
+        ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =========================
+        BASE STYLES
+        ========================= */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F9FAFB;
+            color: #1F2937;
+            line-height: 1.6;
+        }
+
+        /* =========================
+        HEADER
+        ========================= */
+        header {
+            background-color: #2563EB;
+            color: white;
+            padding: 30px 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+        HEADER NAV
+        ========================= */
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            position: relative;
+        }
+
+        header nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #FCD34D;
+            transition: width 0.3s ease;
+        }
+
+        header nav a:hover::after {
+            width: 100%;
+        }
+
+        header nav a:hover {
+            color: #FCD34D;
+        }
+
+        /* =========================
+        MAIN CONTENT
+        ========================= */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* =========================
+        PROFILE CARDS
+        ========================= */
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        /* =========================
+        SECTION HEADINGS
+        ========================= */
+        section h2 {
+            font-size: 22px;
+            color: #2563EB;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background-color: #FF6B6B;
+            display: block;
+            margin-top: 8px;
+            border-radius: 3px;
+        }
+
+        /* =========================
+        PROFILE DETAILS
+        ========================= */
+        section p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #374151;
+        }
+
+        section p strong {
+            color: #1F2937;
+            width: 200px;
+            display: inline-block;
+        }
+
+        /* =========================
+        FORMS
+        ========================= */
+        form {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #1F2937;
+        }
+
+        input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #CBD5E1;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2563EB;
+            box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+        }
+
+        /* =========================
+        BUTTONS
+        ========================= */
+        button {
+            background-color: #2563EB;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1D4ED8;
+        }
+
+        /* =========================
+        FOOTER
+        ========================= */
+        footer {
+            background-color: #1F2937;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* =========================
+        RESPONSIVE DESIGN
+        ========================= */
+        @media (max-width: 768px) {
+            section {
+                padding: 22px;
+            }
+
+            section p strong {
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            input {
+                max-width: 100%;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Starlight High School</h1>
+        <h2>Student Profile</h2>
+
+        <nav>
+            <a href="studentDB.php">Dashboard</a>
+            <a href="login.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+                <p><strong>Name:</strong> [Student Name]</p>
+                <p><strong>Registration Number:</strong> [Reg No]</p>
+                <p><strong>Class/Grade:</strong> [Class]</p>
+                <p><strong>Date of Birth:</strong> [DOB]</p>
+                <p><strong>Email:</strong> [Email]</p>
+                <p><strong>Phone:</strong> [Phone]</p>
+                <p><strong>Gender:</strong> [Gender]</p>
+        </section>
+
+        <section>
+            <h2>Academic Information</h2>
+                <p><strong>Section/Stream:</strong>[Section]</p>
+                <p><strong>Subjects:</strong>[Subject List]</p>
+                <p><strong>Enrollment Date:</strong>[Date]</p>
+        </section>
+
+        <section>
+            <h2>Change Password</h2>
+            <form>
+            <label for="current">Current Password:</label>
+            <input type="password" name="current-password"><br><br>
+
+            <label for="new">New Password:</label>
+            <input type="password" name="new-password"><br><br>
+
+            <label for="confirm">Confirm New Password:</label>
+            <input type="password" name="confirm-new-password"><br><br>
+
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>  
+    
+    <footer>
+        <p><strong>Starlight High School</strong><br>
+            Private Mixed Secondary School | UNEB Curriculum<br>
+            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="167f78707956656277647a7f717e627e7f717e387775386371">[email&#160;protected]</a><br>
+            Phone: +256 700 5
